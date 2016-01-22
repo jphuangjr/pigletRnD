@@ -5,4 +5,4 @@ Research Files for Fickle Piglet
 
 ## Apple Itunes (Podcasts)
 
-`get` (example using serial) https://itunes.apple.com/search?term=serial&entity=podcast
+`get`| (example using serial) | https://itunes.apple.com/search?term=serial&entity=podcast
