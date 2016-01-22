@@ -4,7 +4,7 @@ Research Files for Fickle Piglet
 ## 3rd Party API's
 
 
-| Provider        | Method      | Url/Endpoint  | Ex. Response # | Notes |
+| Provider        | Method      | Url/Endpoint  | Ex. # | Notes |
 | ------------- |:-------------:| ------------:|------------:| ------------:|
 | Apple Itunes | `GET` | https://itunes.apple.com/search?term=serial&entity=podcast | 1 | |
 | Google Books | `GET` | https://www.googleapis.com/books/v1/volumes?q=eloquent+javascript | 2 | |
@@ -13,7 +13,7 @@ Research Files for Fickle Piglet
 
 
 
-## Examples
+## Examples (Reponses)
 ### 1. Apple Itunes (serial example)
 ```Javascript
 {
