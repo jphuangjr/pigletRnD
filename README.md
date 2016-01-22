@@ -12,7 +12,7 @@ Research Files for Fickle Piglet
 
 ## Examples
 
-```
+```JSON
 {
 	resultsCount: 50,
 	results: [
