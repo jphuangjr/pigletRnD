@@ -8,7 +8,7 @@ Research Files for Fickle Piglet
 | ------------- |:-------------:| ------------:|------------:|
 | Apple Itunes | `GET` | https://itunes.apple.com/search?term=serial&entity=podcast | 1 | |
 | Google Books | `GET` | https://www.googleapis.com/books/v1/volumes?q=eloquent+javascript | 2 | |
-| Google Books | `GET` | https://www.googleapis.com/youtube/v3/search?part=snippet&q=javascript&key={YOUR_API_KEY} | 3 | |
+| Google Books | `GET` | https://www.googleapis.com/youtube/v3/search?part=snippet&q=javascript&key={YOUR_API_KEY} | 3 | Access video via https://www.youtube.com/watch?v={items[i].id.videoId}|
 
 
 
@@ -93,6 +93,7 @@ Research Files for Fickle Piglet
 	]
 }
 ```
+### 3. Youtube (Javascript Example)
 
 ```Javascript
 {
