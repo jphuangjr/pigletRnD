@@ -4,10 +4,13 @@ Research Files for Fickle Piglet
 ## 3rd Party API's
 
 
-| Provider        | Method      | Url/Endpoint  | Example Response Number |
+| Provider        | Method      | Url/Endpoint  | Ex. Response # | Notes |
 | ------------- |:-------------:| ------------:|------------:|
-| Apple Itunes | `GET` | https://itunes.apple.com/search?term=serial&entity=podcast | 1 |
-| Google Books | `GET` | https://www.googleapis.com/books/v1/volumes?q=eloquent+javascript | 2 |
+| Apple Itunes | `GET` | https://itunes.apple.com/search?term=serial&entity=podcast | 1 | |
+| Google Books | `GET` | https://www.googleapis.com/books/v1/volumes?q=eloquent+javascript | 2 | |
+| Google Books | `GET` | https://www.googleapis.com/youtube/v3/search?part=snippet&q=javascript&key={YOUR_API_KEY} | 3 | |
+
+
 
 
 ## Examples
@@ -91,5 +94,60 @@ Research Files for Fickle Piglet
 }
 ```
 
+```Javascript
+{
+	kind: "youtube#searchListResponse",
+	etag: ""abQHWywil_AkNqdqji7_FqiK-u4/UHCrGIpB2OUcX5hogzhPiWXDcxQ"",
+	nextPageToken: "CAUQAA",
+	pageInfo:
+		{
+			totalResults: 921655,
+			resultsPerPage: 5
+		},
+	items:
+		[
+			{
+				kind: "youtube#searchResult",
+				etag: ""abQHWywil_AkNqdqji7_FqiK-u4/KvMPTK3_YQLSyYmZiYJFtUPk67U"",
+				id:
+					{
+					kind: "youtube#video",
+					videoId: "Ukg_U3CnJWI"
+					},
+			snippet:
+				{
+					publishedAt: "2014-08-05T14:30:15.000Z",
+					channelId: "UCc1Pn7FxieMohCZFPYEbs7w",
+					title: "Learn JavaScript in 12 Minutes",
+					description: "Learn the fundamental features of JavaScript - the language used to add dynamic, interactive content to websites. I teach you how to get started with JavaScript, ...",
+					thumbnails:
+						{
+							default:
+								{
+									url: "https://i.ytimg.com/vi/Ukg_U3CnJWI/default.jpg",
+									width: 120,
+									height: 90
+								},
+							medium:
+								{
+									url: "https://i.ytimg.com/vi/Ukg_U3CnJWI/mqdefault.jpg",
+									width: 320,
+									height: 180
+								},
+							high:
+								{
+									url: "https://i.ytimg.com/vi/Ukg_U3CnJWI/hqdefault.jpg",
+									width: 480,
+									height: 360
+								}
+						},
+					channelTitle: "jaketvee",
+					liveBroadcastContent: "none"
+				}
+			}...
+
+		]
+}
+```
 
 
