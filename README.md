@@ -6,10 +6,10 @@ Research Files for Fickle Piglet
 
 | Provider        | Method      | Url/Endpoint  | Ex. # | Notes |
 | ------------- |:-------------:| ------------:|------------:| ------------:|
-| Apple Itunes | `GET` | https://itunes.apple.com/search?term=serial&entity=podcast | 1 | |
-| Google Books | `GET` | https://www.googleapis.com/books/v1/volumes?q=eloquent+javascript | 2 | |
-| Youtube | `GET` | https://www.googleapis.com/youtube/v3/search?part=snippet&q=javascript&key={YOUR_API_KEY} | 3 | Access video via https://www.youtube.com/watch?v={items[i].id.videoId}|
-| Wikipedia | `GET` | https://en.wikipedia.org/w/api.php?action=query&titles=Elm_(programming_language)&prop=revisions&rvprop=content&format=json | 4 | Need to parse through and delete "url" and other markup stuff. Also need a perfect match or will have a #REDIRECT in the results|
+| Apple Itunes | `GET` | https://itunes.apple.com/search?term={SEARCH+TERM}&entity=podcast | 1 | |
+| Google Books | `GET` | https://www.googleapis.com/books/v1/volumes?q={SEARCH+TERM} | 2 | |
+| Youtube | `GET` | https://www.googleapis.com/youtube/v3/search?part=snippet&q={SEARCH+TERM}&key={YOUR_API_KEY} | 3 | Access video via https://www.youtube.com/watch?v={items[i].id.videoId}|
+| Wikipedia | `GET` | https://en.wikipedia.org/w/api.php?action=query&titles={SEARCH_TERM}&prop=revisions&rvprop=content&format=json | 4 | Need to parse through and delete "url" and other markup stuff. Also need a perfect match or will have a #REDIRECT in the results|
 
 
 
