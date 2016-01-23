@@ -14,7 +14,8 @@ Research Files for Fickle Piglet
 
 
 
-## Examples (Reponses)
+## Examples (Reponses CLEANED of unnecessary data)
+
 ### 1. Apple Itunes (serial example)
 ```Javascript
 {
