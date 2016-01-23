@@ -10,7 +10,7 @@ Research Files for Fickle Piglet
 | Google Books | `GET` | https://www.googleapis.com/books/v1/volumes?q={SEARCH+TERM} | 2 | |
 | Youtube | `GET` | https://www.googleapis.com/youtube/v3/search?part=snippet&q={SEARCH+TERM}&key={YOUR_API_KEY} | 3 | Access video via https://www.youtube.com/watch?v={items[i].id.videoId}|
 | Wikipedia | `GET` | https://en.wikipedia.org/w/api.php?action=query&titles={SEARCH_TERM}&prop=revisions&rvprop=content&format=json | 4 | Need to parse through and delete "url" and other markup stuff. Also need a perfect match or will have a #REDIRECT in the results|
-
+| Vimeo | `GET` | https://api.vimeo.com/videos?query={SEARCH+TERM} | 5 | Required OAuth 2.0 to access api. Reference credentials for access keys and tokens|
 
 
 
@@ -106,6 +106,7 @@ Research Files for Fickle Piglet
 ### 3. Youtube (Javascript Example)
 
 ```Javascript
+
 {
 	kind: "youtube#searchListResponse",
 	etag: ""abQHWywil_AkNqdqji7_FqiK-u4/UHCrGIpB2OUcX5hogzhPiWXDcxQ"",
@@ -216,6 +217,115 @@ Research Files for Fickle Piglet
 			}
 		}
 	}
+}
+```
+
+### 4. Vimeo (Javascript Example)
+
+```Javascript
+
+{
+    "total": 9796,
+    "page": 1,
+    "per_page": 25,
+    "paging": {
+        "next": "/videos?query=javascript&page=2",
+        "previous": null,
+        "first": "/videos?query=javascript&page=1",
+        "last": "/videos?query=javascript&page=392"
+    },
+    "data": [
+        {
+            "uri": "/videos/49384334",
+            "name": "Pure JavaScript",
+            "description": "Are you comfortable passing functions around, returning them from other functions, and generally enjoy the pleasures of higher-order functions? Join in on an hour implementing ideas from functional programming in JavaScript. I will show you how you can significantly up your game by leaving loops behind and embracing functions as the primary unit of abstraction.\n\nChristian Johansen\n\nChristian is a passionate programmer currently working at gitorious.org where he does everything from JavaScript to Ruby to Unix systems tuning. He is the author of \"Test-Driven JavaScript Development\", and he maintains several open source projects, including the recently released test-framework Buster.JS and the popular mocking framework Sinon.JS. After dark you may find him tinkering with his Emacs setup, coding Lisp and slowly being devoured by the world of functional programming.",
+            "link": "https://vimeo.com/49384334",
+            "embed": {
+                "html": "<iframe src=\"https://player.vimeo.com/video/49384334?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0\" width=\"1280\" height=\"720\"frameborder=\"0\" title=\"Pure JavaScript\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+            },
+            "pictures": {
+                "uri": "/videos/49384334/pictures/340785640",
+                "active": true,
+                "type": "custom",
+                "sizes": [
+                    {
+                        "width": 1280,
+                        "height": 720,
+                        "link": "https://i.vimeocdn.com/video/340785640_1280x720.jpg?r=pad"
+                    }
+                ]
+            },
+            "tags": [
+                {
+                    "uri": "/tags/javazone2012",
+                    "tag": "JavaZone 2012"
+                },
+                {
+                    "uri": "/tags/conference",
+                    "tag": "Conference"
+                },
+                {
+                    "uri": "/tags/javabin",
+                    "tag": "JavaBin"
+                },
+                {
+                    "uri": "/tags/presentation",
+                    "tag": "Presentation"
+                },
+                {
+                    "uri": "/tags/english",
+                    "tag": "English",
+                },
+                {
+                    "uri": "/tags/functional",
+                    "tag": "Functional",
+                },
+                {
+                    "uri": "/tags/christianjohansen",
+                    "tag": "Christian Johansen",
+                },
+                {
+                    "uri": "/tags/javascript",
+                    "tag": "JavaScript",
+                }
+            ],
+            "user": {
+                "uri": "/users/7540193",
+                "name": "JavaZone",
+                "link": "https://vimeo.com/javazone",
+                "location": "Norway",
+                "bio": null,
+                "created_time": "2011-06-22T11:19:21+00:00",
+                "pictures": {
+                    "uri": "/users/7540193/pictures/6324199",
+                    "active": true,
+                    "type": "custom",
+                    "sizes": [
+                        {
+                            "width": 30,
+                            "height": 30,
+                            "link": "https://i.vimeocdn.com/portrait/6324199_30x30.jpg?r=pad"
+                        },
+                        {
+                            "width": 75,
+                            "height": 75,
+                            "link": "https://i.vimeocdn.com/portrait/6324199_75x75.jpg?r=pad"
+                        },
+                        {
+                            "width": 100,
+                            "height": 100,
+                            "link": "https://i.vimeocdn.com/portrait/6324199_100x100.jpg?r=pad"
+                        },
+                        {
+                            "width": 300,
+                            "height": 300,
+                            "link": "https://i.vimeocdn.com/portrait/6324199_300x300.jpg?r=pad"
+                        }
+                    ]
+                }
+            }
+        } ...
+    ]
 }
 
 ```
