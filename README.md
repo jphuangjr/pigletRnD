@@ -239,7 +239,14 @@ Research Files for Fickle Piglet
         {
             "uri": "/videos/49384334",
             "name": "Pure JavaScript",
-            "description": "Are you comfortable passing functions around, returning them from other functions, and generally enjoy the pleasures of higher-order functions? Join in on an hour implementing ideas from functional programming in JavaScript. I will show you how you can significantly up your game by leaving loops behind and embracing functions as the primary unit of abstraction.\n\nChristian Johansen\n\nChristian is a passionate programmer currently working at gitorious.org where he does everything from JavaScript to Ruby to Unix systems tuning. He is the author of \"Test-Driven JavaScript Development\", and he maintains several open source projects, including the recently released test-framework Buster.JS and the popular mocking framework Sinon.JS. After dark you may find him tinkering with his Emacs setup, coding Lisp and slowly being devoured by the world of functional programming.",
+            "description":
+            	"Are you comfortable passing functions around, returning them from other functions, and generally enjoy the pleasures of higher-order functions? \
+            	 Join in on an hour implementing ideas from functional programming in JavaScript. I will show you how you can significantly up your game by  \
+            	 leaving loops behind and embracing functions as the primary unit of abstraction.\n\nChristian Johansen\n\nChristian is a passionate programmer \
+            	 currently working at gitorious.org where he does everything from JavaScript to Ruby to Unix systems tuning. He is the author of \"Test-Driven  \
+            	 JavaScript Development\", and he maintains several open source projects, including the recently released test-framework Buster.JS and the  \
+            	 popular mocking framework Sinon.JS. After dark you may find him tinkering with his Emacs setup, coding Lisp and slowly being devoured by the \
+            	 world of functional programming.",
             "link": "https://vimeo.com/49384334",
             "embed": {
                 "html": "<iframe src=\"https://player.vimeo.com/video/49384334?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0\" width=\"1280\" height=\"720\"frameborder=\"0\" title=\"Pure JavaScript\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
