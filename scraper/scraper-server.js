@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var PORT = 8080;
+var PORT = 8081;
 
 var noodle = require('noodlejs');
 
@@ -10,41 +10,42 @@ app.listen(PORT, function(){
 
 module.exports = app;
 
-var website = "http://feeds.serialpodcast.org/serialpodcast"
+//var website = "http://feeds.feedwrench.com/JavaScriptJabber.rss"
 
-var description = {
-    "url": website,
-    "selector": "description",
-    "extract": ["text"]
-}
-
-var title = {
-    "url": website,
-    "selector": "title",
-    "extract": ["text"]
-}
-
-var podcasts = []
-
-noodle.query(title).then(function (results) {
-    for(var i=0; i<results.results[0].results.length; i++){
-        podcasts.push({title: results.results[0].results[i].text})
+var scrape = function(website, title_selector, des_selector){
+    var description = {
+        "url": website,
+        "selector": des_selector,
+        "extract": ["text"]
     }
-}).then(function(){
-    noodle.query(description).then(function (results) {
-        for(var i=0; i<results.results[0].results.length; i++){
-            podcasts[i].description = (results.results[0].results[i].text)
+    var title = {
+        "url": website,
+        "selector": title_selector,
+        "extract": ["text"]
+    }
+    var episodes = []
 
+    noodle.query(title).then(function (results) {
+        for(var i=0; i<results.results[0].results.length; i++){
+            episodes.push({title: results.results[0].results[i].text})
         }
     }).then(function(){
-        console.log(podcasts)
+        noodle.query(description).then(function (results) {
+            for(var i=0; i<results.results[0].results.length; i++){
+                episodes[i].description = (results.results[0].results[i].text)
+            }
+        }).then(function(){
+            console.log(episodes)
+        });
     });
-});
+}
 
-//noodle.query(queries2).then(function (results) {
-//    for(var i=0; i<results.results[0].results.length; i++){
-//        podcasts[i].title = (results.results[0].results[i].text)
-//
-//    }
-//});
+scrape("http://feeds.feedwrench.com/JavaScriptJabber.rss", "title", "description")
+
+
+
+
+
+
+
 
