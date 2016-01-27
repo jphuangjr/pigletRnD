@@ -1,6 +1,49 @@
 # pigletRnD
 Research Files for Fickle Piglet
 
+## Tags
+name	`Arts`
+name	`Education`
+name	`Podcasts`
+name	`Natural Sciences`
+name	`Technology`
+name	`Educational Technology`
+name	`Tech News`
+name	`TV & Film`
+name	`Software How-To`
+name	`Society & Culture`
+name	`Podcasting`
+name	`Religion & Spirituality`
+name	`Science & Medicine`
+name	`Medicine`
+name	`Christianity`
+name	`News & Politics`
+name	`Higher Education`
+name	`Games & Hobbies`
+name	`Self-Help`
+name	`Visual Arts`
+name	`Business`
+name	`Government & Organizations`
+name	`Music`
+name	`K-12`
+name	`Training`
+name	`Spirituality`
+name	`Social Sciences`
+name	`Philosophy`
+name	`Comedy`
+name	`History`
+name	`Health`
+name	`Performing Arts`
+name	`Hobbies`
+name	`Outdoor`
+name	`Kids & Family`
+name	`Management & Marketing`
+name	`Fitness & Nutrition`
+name	`Literature`
+name	`Food`
+name	`Careers`
+
+
 ## 3rd Party API's
 
 
