@@ -3,7 +3,7 @@ Research Files for Fickle Piglet
 
 ## Neo4j Queries
 **Create User**
-    : create (n:User {firstname:'tessa',lastname:'serdar',username:'tessajean',email:'t@gmail.com',password:'12345'})     return n
+     create (n:User {firstname:'tessa',lastname:'serdar',username:'tessajean',email:'t@gmail.com',password:'12345'})     return n
     
 
 ## Tags
